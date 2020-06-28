@@ -118,6 +118,9 @@ xhr.send('fields *; where id = (8,9,11);')
             }
       })
 
+
+
+
       function myFunction1() {
             var x = document.getElementById("myDIV1");
             if (x.style.display === "block") {

@@ -1,24 +1,24 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
-    font-family: "Helvetica Neue",sans-serif;
-    font-weight: lighter;
-    background-color: #000;
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+  background-color: #000;
 }
 
 
 #hero-image{
-  background: url(image/cyberpunk-.jpg)  ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  height: 820px;
-  
-  
+background: url(image/cyberpunk-.jpg)  ;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: scroll;
+height: 820px;
+
+
 }
 
 .hero-marketing-text {
@@ -46,10 +46,10 @@ transition: 0.3s;
 }
 
 .hero-marketing-text span:hover {
-  font-size: larger;
-  text-shadow: 5px 5px black;
-  
-  }
+font-size: larger;
+text-shadow: 5px 5px black;
+
+}
 
 .hero-marketing-text h5 {
 color: #eee;
@@ -71,12 +71,98 @@ border: none;
 cursor: pointer;
 }
 
+
+@media screen and (max-width: 460px) {
+
+#hero-image{
+  background: url(image/cyberpunk-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 820px;
+  width: 700px;
+  
+  
+}
+
+#old-games {
+  background: url('image/recent_games_bg.png') top center no-repeat;
+  background-color: #eef2f6;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1px solid #d6dee7;
+  padding: 70px 0 120px;
+  height: 1100px;
+  width: 700px;
+  }
+
+  
+  
+  #old-games .box {
+    position: relative;
+    flex-basis: 31%;
+    background-color: #fff;
+    width: 50px;
+    
+    }
+
+    #POPULAR-GAMES{
+      background: url('image/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+      height: 650px;
+      background-color: #eef2f6;
+      border-top: 1px solid #d6dee7;
+      border-bottom: 1px solid #d6dee7;
+      padding: 70px 0 120px;
+      height: 1100px;
+      width: 700px;
+      }
+
+      .site-footer
+      {
+        background-color:#26272b;
+        padding:45px 0 20px;
+        font-size:15px;
+        line-height:24px;
+        color:#737373;
+        /* height: 400px; */
+        width: 700px;
+      }        
+
+      #iframe{
+        width: 200px;
+        height: 100px;
+      }
+
+      #SS{
+        height: 10px;
+        width: 20px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .content {
-  width: 94%;
-  margin: 4em auto;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
+width: 94%;
+margin: 4em auto;
+font-size: 20px;
+line-height: 30px;
+text-align: justify;
 }
 
 h1, h2, h3, h4, h5 {
@@ -135,24 +221,104 @@ overflow: hidden;
 
 
 .flex {
+display: flex;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+justify-content: space-between;
+
+}
+
+
+
+
+
+@media (max-width:767px){
+  .flex {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  /* margin: 0 auto;
+  padding: 0 15px; */
   justify-content: space-between;
   
   }
+  
+#old-games .box {
+position: relative;
+flex-basis: 310%;
+background-color: #fff;
+width: 500px;
+padding-left: 150px;
+margin: 10px 5px 0px 7px;
+padding: 10px 5px 0px 7px;
+height: 1100px;
+ overflow: scroll; 
 
-  /* @media (max-width:767px){
-    .flex {
-    display: inline;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    justify-content: space-between;
-    
-    }
-    } */
+}
+
+
+.badge.Strategy {
+  background-color: #FF205F;
+  padding-left: 150px;
+  display: none;
+  }
+  
+  .badge.Adventure {
+  background-color: #4EAE60;
+  display: none;
+  }
+  
+  
+  .badge.rpg,
+  .badge.RPG {
+  background-color: #40ABF5;
+  display: none;
+  }
+  
+#old-games .box img {
+width: 100%;
+}
+
+#old-games .box .box-lower-section {
+padding: 20px;
+width: 150px; 
+margin: 10px 5px 0px 7px;
+padding: 10px 5px 0px 7px;
+padding-left: 150px;
+background-color: white;
+}
+
+#old-games .box .box-lower-section p {
+color: #999;
+
+margin: 10px 5px 0px 7px;
+padding: 10px 5px 0px 7px;
+}
+
+#old-games .box .box-lower-section a {
+color: #999;
+font-size: 0.8em;
+margin: 10px 5px 0px 7px;
+padding: 10px 5px 0px 7px;
+}
+
+#star{
+  display: none;
+  padding-left: 120px;
+  }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
 
 .badge {
 padding: 9px 20px;
@@ -166,6 +332,7 @@ font-size: 0.75em;
 
 .badge.Strategy {
 background-color: #FF205F;
+
 }
 
 .badge.Adventure {
@@ -224,59 +391,109 @@ font-size: 0.8em;
 }
 
 #VTMBSummary{
-  overflow: auto;
-  width: 100%;
-  height: 200px;
+overflow: auto;
+width: 100%;
+height: 200px;
 }
 
 #JA2Summary{
-  overflow: auto;
-  width: 100%;
-  height: 200px;
+overflow: auto;
+width: 100%;
+height: 200px;
 }
 
 #JASummary{
-  overflow: auto;
-  width: 100%;
-  height: 200px;
+overflow: auto;
+width: 100%;
+height: 200px;
 }
 
 #content1{
-  overflow: auto;
-  width: 100%;
-  height: 200px;
+overflow: auto;
+width: 100%;
+height: 200px;
 }
 
 #content2{
-  overflow: auto;
-  width: 100%;
-  height: 200px;
+overflow: auto;
+width: 100%;
+height: 200px;
 }
 #content3{
-  overflow: auto;
-  width: 100%;
-  height: 200px;
+overflow: auto;
+width: 100%;
+height: 200px;
 }
 
-  #popular-games h1 {
-  text-align: center;
-  color: whitesmoke;
+#popular-games h1 {
+text-align: center;
+color: whitesmoke;
+}
+
+#popular-games .box {
+position: relative;
+flex-basis: 31%;
+background-color: #fff;
+}
+
+#popular-games .box .badge {
+position: absolute;
+top: 20px;
+left: 20px;
+z-index: 2;
+}
+
+#popular-games .box img {
+width: 100%;
+}
+
+#popular .box .box-lower-section {
+padding: 20px;
+}
+
+#popular-games .box .box-lower-section p {
+color: #007bb6;
+}
+
+#popular-games .box .box-lower-section a {
+color: #999;
+font-size: 0.8em;
+}
+
+
+
+
+#POPULAR-GAMES{
+  background: url('image/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 650px;
+  background-color: #eef2f6;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1px solid #d6dee7;
+  padding: 70px 0 120px;
   }
   
-  #popular-games .box {
+  #popular-games1 h1 {
+  text-align: center;
+  }
+  
+  #popular-games1 .box {
   position: relative;
   flex-basis: 31%;
   background-color: #fff;
+  margin-top: 50px;
   }
   
-  #popular-games .box .badge {
+  #popular-games1 .box .badge {
   position: absolute;
   top: 20px;
   left: 20px;
   z-index: 2;
   }
   
-  #popular-games .box img {
+  #popular-games1 .box img {
   width: 100%;
   }
   
@@ -284,99 +501,118 @@ font-size: 0.8em;
   padding: 20px;
   }
   
-  #popular-games .box .box-lower-section p {
-  color: #007bb6;
+  #popular-games1 .box .box-lower-section p {
+  color: #999;
   }
   
-  #popular-games .box .box-lower-section a {
+  #popular-games1 .box .box-lower-section a {
   color: #999;
   font-size: 0.8em;
   }
-  
-  
 
 
-  #POPULAR-GAMES{
-    background: url('image/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 650px;
-    background-color: #eef2f6;
-    border-top: 1px solid #d6dee7;
-    border-bottom: 1px solid #d6dee7;
-    padding: 70px 0 120px;
-    }
-    
-    #popular-games1 h1 {
-    text-align: center;
-    }
-    
-    #popular-games1 .box {
-    position: relative;
-    flex-basis: 31%;
-    background-color: #fff;
-    margin-top: 50px;
-    }
-    
-    #popular-games1 .box .badge {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-    }
-    
-    #popular-games1 .box img {
-    width: 100%;
-    }
-    
-    #popular .box .box-lower-section {
-    padding: 20px;
-    }
-    
-    #popular-games1 .box .box-lower-section p {
-    color: #999;
-    }
-    
-    #popular-games1 .box .box-lower-section a {
-    color: #999;
-    font-size: 0.8em;
-    }
+  #popular-games1 .box:hover {
+  transition: 0.3s;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+  }
 
-
-    #popular-games1 .box:hover {
-    transition: 0.3s;
-    font-size: large;
-    font-weight: bolder;
-    cursor: pointer;
-    }
-
-    #popular-games .box:hover {
-    transition: 0.3s;
-    font-size: large;
-    font-weight: bolder;
-    cursor: pointer;
-    }
+  #popular-games .box:hover {
+  transition: 0.3s;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+  }
 
 .logo {
-    line-height: 60px;
-    position: fixed !important;
-    float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+  line-height: 60px;
+  position: fixed !important;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 nav {
-    position: fixed !important;
-    overflow: hidden !important;
-    width: 100%;
-    line-height: 60px;
+  position: fixed !important;
+  overflow: hidden !important;
+  width: 100%;
+  line-height: 60px;
 }
 
 nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden !important;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav ul li a:hover{
+font-weight: medium;
+border-radius: 25px;
+background: #2067ff;
+padding: 10px;
+width: 5px;
+height: 5px;
+transition: 0.3s;
+font-size: larger;
+text-shadow: 1px 2px black;
+
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+ @media(max-width: 786px) {
+
+  .logo {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+  nav {
+    position: fixed;
+    overflow: hidden !important;
+    width: 100%;
+    line-height: 60px;
+    }
+    
+    nav ul {
     line-height: 60px;
     list-style: none;
     background: rgba(0, 0, 0, 0);
@@ -385,237 +621,204 @@ nav ul {
     padding: 0;
     text-align: right;
     margin: 0;
-    padding-right: 40px;
+    padding-right: 20px;
     transition: 1s;
-}
-
-nav.black ul {
-    background: #000;
-}
-
-nav ul li {
+    }
+    
+    
+    
+    nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
-}
+    padding: 6px 30px;
+    }
+    
+
+  }
+
+/*  
+
+
+  
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+text-decoration: none;
+color: #fff;
+font-size: 10px;
 }
 
 nav ul li a:hover{
-  font-weight: medium;
-  border-radius: 25px;
-  background: #2067ff;
-  padding: 10px;
-  width: 5px;
-  height: 5px;
-  transition: 0.3s;
-  font-size: larger;
-  text-shadow: 1px 2px black;
+font-weight: medium;
+border-radius: 2px;
+background: #2067ff;
+padding: 10px;
+width: 5px;
+height: 5px;
+transition: 0.3s;
+font-size: larger;
+text-shadow: 1px 2px black;
+
+}
+
+
   
-}
 
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
 
-@media(max-width: 786px) {
 
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
-    }
-
-    nav ul {
-          max-height: 0px;
-          background: #000;
-    }
-
-    nav.black ul {
-          background: #000;
-    }
-
-    .showing {
-          max-height: 34em;
-    }
-
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-
-    .menu-icon {
-          display: block;
-    }
-
-}
+} */
 
 /* Footer */
 
 .site-footer
 {
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
-  opacity:0.5
+border-top-color:#bbb;
+opacity:0.5
 }
 .site-footer hr.small
 {
-  margin:20px 0
+margin:20px 0
 }
 .site-footer h6
 {
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
 }
 .site-footer a
 {
-  color:#737373;
+color:#737373;
 }
 .site-footer a:hover
 {
-  color:#3366cc;
-  text-decoration:none;
+color:#3366cc;
+text-decoration:none;
 }
 .footer-links
 {
-  padding-left:0;
-  list-style:none
+padding-left:0;
+list-style:none
 }
 .footer-links li
 {
-  display:block
+display:block
 }
 .footer-links a
 {
-  color:#737373
+color:#737373
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
-  text-decoration:none;
+color:#3366cc;
+text-decoration:none;
 }
 .footer-links.inline li
 {
-  display:inline-block
+display:inline-block
 }
 .site-footer .social-icons
 {
-  text-align:right
+text-align:right
 }
 .site-footer .social-icons a
 {
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
+width:40px;
+height:40px;
+line-height:40px;
+margin-left:6px;
+margin-right:0;
+border-radius:100%;
+background-color:#33353d
 }
 
-@media (max-width:991px)
+/* @media (max-width:991px)
 {
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
+.site-footer [class^=col-]
+{
+  margin-bottom:30px
+}
 }
 @media (max-width:767px)
 {
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .site-footer .social-icons
-  {
-    text-align:center
-  }
+.site-footer
+{
+  padding-bottom:0
 }
+.site-footer .site-footer .social-icons
+{
+  text-align:center
+}
+} */
 
 .about{
-    display: inline-block;
-    margin:auto;
-    width: 400px;
-    height: 200px;
-    padding-right: 250px;
-    text-align: center;
-    
+  display: inline-block;
+  margin:auto;
+  width: 400px;
+  height: 200px;
+  padding-right: 250px;
+  text-align: center;
+  
 }
 
 .Categories{
-    display: inline-block;
-    width: 400px;
-    height: 200px;
-    padding-right: 50px;
-    text-align: center;
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  padding-right: 50px;
+  text-align: center;
 }
 
 .Quick-Links{
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    text-align: center;
-    padding-left: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  padding-left: 10px;
 }
 
 
 
 
 #myDIV1{
-  display: none;
+display: none;
 }
 #content1{
-  display: none;
+display: none;
 }
 
 #myDIV2{
-  display: none;
+display: none;
 }
 #content2{
-  display: none;
+display: none;
 }
 #myDIV3{
-  display: none;
+display: none;
 }
 #content3{
-  display: none;
+display: none;
 }
 
 .checked {
-  color: orange;
-  
+color: orange;
+
 }
 #star{
-  padding-left: 120px;
+padding-left: 120px;
 }
 
 
 button{
-  
-  background-color: #2067ff;
+
+background-color: #2067ff;
 color: #131313;
 border-radius: 25px;
 padding: 15px 25px;
@@ -628,69 +831,69 @@ cursor: pointer;
 
 button:hover{
 font-size: medium;
-  transition: 0.3s;
+transition: 0.3s;
 }
- #p{
-  text-align: center;
-  font-size: large; 
-  text-decoration: underline;
-  border: #000 solid 3px;
-  border-radius: 25px;
-  background-color: #709eff;
+#p{
+text-align: center;
+font-size: large; 
+text-decoration: underline;
+border: #000 solid 3px;
+border-radius: 25px;
+background-color: #709eff;
 }
 
 #p1{
-  text-align: center;
-  font-size: large; 
-  text-decoration: underline;
-  border: #000 solid 3px;
-  border-radius: 25px;
-  background-color: #ffffff;
+text-align: center;
+font-size: large; 
+text-decoration: underline;
+border: #000 solid 3px;
+border-radius: 25px;
+background-color: #ffffff;
 }
 
 #p2{
-  text-align: center;
-  font-size: large; 
-  text-decoration: underline;
-  border: #000 solid 3px;
-  border-radius: 25px;
-  background-color: #ff790a;
+text-align: center;
+font-size: large; 
+text-decoration: underline;
+border: #000 solid 3px;
+border-radius: 25px;
+background-color: #ff790a;
 }
 
 #RATING{
-  text-align: center;
-  font-size: large; 
-  text-decoration: underline;
-  border: #000 solid 3px;
-  border-radius: 25px;
-  background-color: #9bff7c;
+text-align: center;
+font-size: large; 
+text-decoration: underline;
+border: #000 solid 3px;
+border-radius: 25px;
+background-color: #9bff7c;
 
 }
 
 #rating1{
-  color: rgb(2, 53, 0);
-  font-weight: bolder;
-  font-size: x-large;
-  text-align: center;
-  font-family: monospace;
+color: rgb(2, 53, 0);
+font-weight: bolder;
+font-size: x-large;
+text-align: center;
+font-family: monospace;
 
 }
 #rating2{
-  color: rgb(2, 53, 0);
-  font-weight: bolder;
-  font-size: x-large;
-  text-align: center;
-  font-family: monospace;
+color: rgb(2, 53, 0);
+font-weight: bolder;
+font-size: x-large;
+text-align: center;
+font-family: monospace;
 
 }
 #rating3{
-  color: rgb(2, 53, 0);
-  font-weight: bolder;
-  font-size: x-large;
-  text-align: center;
-  font-family: monospace;
-  
-  
+color: rgb(2, 53, 0);
+font-weight: bolder;
+font-size: x-large;
+text-align: center;
+font-family: monospace;
+
+
 }
 
 
@@ -698,151 +901,151 @@ font-size: medium;
 
 
 .text01 {
-  background-color: #554824;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+background-color: #554824;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
 }
 
 .text1 {
-  background-color: #4d0000;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+background-color: #4d0000;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
 }
 
 .text2 {
-  background-color: #34004d;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+background-color: #34004d;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
 }
 .text3 {
-  background-color: #535c00;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+background-color: #535c00;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
 }
 .text4 {
-  background-color: #b44800;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+background-color: #b44800;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
 }
 .text5 {
-  background-color: #141550;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+background-color: #141550;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
 }
 
 
 .box:hover .overlay {
-  opacity: 1;
+opacity: 1;
 }
 
 
 .box:hover .image {
-  opacity: 0.3;
+opacity: 0.3;
 }
 
 .overlay {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
 }
 
 
- /* {box-sizing: border-box} */
+/* {box-sizing: border-box} */
 .mySlides {display: none}
 img {vertical-align: middle;} 
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+max-width: 1000px;
+position: relative;
+margin: auto;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
 }
 
- .active, .dot:hover {
-  background-color: #717171;
+.active, .dot:hover {
+background-color: #717171;
 }
 
 
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.prev, .next,.text {font-size: 11px}
 }
 
 #SS{
-  height: 221px;
-  width: 100px;
+height: 221px;
+width: 100px;
 }
 
 
- 
+
